@@ -4,6 +4,9 @@
   "description": "A sender client for the AeroGear SimplePush server",
   "homepage": "https://github.com/aerogear/aerogear-simplepush-node-client",
   "main": "lib/sps-client.js",
+  "bin": {
+    "simple-push": "./bin/cli.js"
+  },
   "author": {
     "name": "Red Hat, Inc.",
     "url": "http://aerogear.org"
@@ -12,7 +15,7 @@
     "name": "Lucas Holmquist",
     "email": "lholmqui@redhat.com"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git@github.com:aerogear/aerogear-simplepush-node-client.git"
   },
@@ -24,5 +27,8 @@
       "type": "Apache-2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
-  ]
+  ],
+  "dependencies": {
+    "nopt": "~2.1.2"
+  }
 }
